@@ -1,6 +1,9 @@
 # pangenome_batchR
 An increasing number of programs are available for microbial pangenome analysis, including Roary, Panaroo, Pandora, Pagoo, Panakeia, and GET_HOMOLOGUES. However, few offer standardised output files that can be used for more complex downstream analyses, especially for multiple pangenomes at once. In response, this small program was developed to take multiple standard gene presence-absence files that are produced by all pangenome programs and provide a number of output plots and data tables to inform a first-pass analysis of each pangenome. By leveragint the capabilities of Pagoo and other R packages, the output includes core, shell, and cloud pangenome matrices, PCA plots, core gene alignments, random forest-based feature selection, Heaps' law (power law regression) calculations, gene clusters under positive, negative, and neutral selection, and population structure analyses (with associated phylogenetic trees). See below for a detailed overview of these analyses and their output files. The priority of this program is to quickly produce a large amount of data associated with each input pangenome as a starting point for a more focused and refined analysis by the user.
 
+### How to cite
+Coming soon
+
 ## Installation
 
 ```
@@ -39,8 +42,29 @@ patchwork: 1.2.0
 
 ### Input file formats
 
+The *.gff files should be those that were used by the pangenome construction program.
+
+The presence-absence file should be a comma-separated pangenome matrix similar to what is produced by Roary.
+
+The tab-separated metadata table should list the genome names in a column called `filename`, and these should match the assemblies that are listed in the gene presence-absence file and match the *.gff filenames. The remaining columns should include all categorical metadata associated with each genome that might be relevant when plotting (see below).
 
 ### `config.yaml` specifics
+
+The `config.yaml` enables global parameters to be set prior to running the program. The input directory should be specified, as well as the column names in the metdata table that list the categorical variables. Additionally, the percentage of genomes a gene should be associated with for it to be considered "core" for both pangenome and phylogenetic analyses can be specified (core_level_pangenome: 95, core_level_phylogeny: 100 are the defaults).
+
+## Running the program
+
+```
+Rscript \
+    pagoo_batch_analysis.R \
+    --config config.yaml
+```
+
+## Output files and analyses
+
+
+
+
 
 
 
