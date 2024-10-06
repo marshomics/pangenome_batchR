@@ -62,6 +62,15 @@ Rscript \
 
 ## Output files and analyses
 
+The following files and plots will be produced:
+
+1. Summary statistics
+
+
+## Next steps
+
+## References
+
 
 
 
