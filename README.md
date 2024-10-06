@@ -3,7 +3,7 @@ An increasing number of programs are available for microbial pangenome analysis,
 
 ## Installation
 
-`git clone https://github.com/marshomics/pangenome_batchR.git`
+```git clone https://github.com/marshomics/pangenome_batchR.git```
 
 ## Input preparation
 
