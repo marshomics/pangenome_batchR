@@ -9,7 +9,7 @@ git clone https://github.com/marshomics/pangenome_batchR.git
 
 ## Dependencies
 
-`pangenome_batchR` has been tested with the following package versions. When running the program, it will attempt to install any missing packages.
+`pangenome_batchR` has been tested with the following package versions. When running the program it will attempt to install any missing packages.
 
 ```
 RColorBrewer: 1.1.3 
@@ -35,7 +35,12 @@ patchwork: 1.2.0
 
 ## Input preparation
 
+`pangenome_batchR` takes a `config.yaml` file as the input which specifies the data directory, the categorical variables to be used for plotting, and the percentage pangenome definition. The data directory can either be a single directory containing the *.gff files used for pangenome construction, the presence-absence file, and metadata file, or a parent directory containing multiple sub-directories that each contain these files (i.e. when processing multiple pangenomes at once).
 
+### Input file formats
+
+
+### `config.yaml` specifics
 
 
 
