@@ -1,0 +1,7 @@
+input_directory: "path/to/intput/directory"
+categorical_variables:
+  - "variable1"
+  - "variable2"
+  - "variable3"
+core_level_pangenome: 95
+core_level_phylogeny: 100
