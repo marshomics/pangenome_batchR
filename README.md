@@ -64,7 +64,21 @@ Rscript \
 
 The following files and plots will be produced:
 
-1. Summary statistics
+1. Summary statistics: Pangenome summary statistics listing the number of core, shell, and cloud genes.
+2. Extract gene metadata: Table listing the genes and contig associated with each pangenome cluster, their genome coordinates, strand, and gene products (if included in the *.gff files). Additionally, separated tables for core, cloud, and shell genes are provided.
+3. Extract cluster metadata: Tables listing the pangenome clusters and their functional annotation for core, shell, and cloud genes.
+4. Core, cloud, and shell gene sequences: Fasta files of the genes associated with each pangenome section.
+5. Core and accessory genome PCA plots: A separate plot is produced for each categorical variable (column) in the metadata, with the dots coloured according to metadata category.
+6. Pangenome curves: 
+7. Heaps' law: 
+8. Pangenome pie chart:
+9. Filtered pangenome matrices: The pangenome matrix subset to include only core, shell, or cloud genes.
+10. Filtered pangenome presence-absence tables: Presence-absence tables subset to include only core, shell, or cloud genes.
+11. PCA partitioning and k-means clustering: 
+12. Random forest feature selection:
+13. Core gene codon-aware alignment:
+14. Core genes under positive, negative, or neutral selection: Neutral core gene alignments with and without gaps as well as a concatenated alignment with and without gaps.
+15. Pangenome population structure: 
 
 
 ## Next steps
